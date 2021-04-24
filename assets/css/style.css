@@ -1,0 +1,289 @@
+/* 
+    Theme Name: My Portfolio
+    Theme Version: V0
+    Desgined and Developed by Mahadi Hassan
+    
+    Made with ❤ If you're Thinking to Copy Please don't
+    
+    Before you do it Look at Yourself Who you are!!!
+
+*/
+
+
+/* 
+    Fonts Imported
+    1. Roboto Mono
+    2. Ubuntu Mono
+    3. IBM Plex Mono
+*/
+
+
+/*
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 5 Pro';
+*/
+
+
+/* Fonts Import */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* CSS Varriables */
+
+:root {
+    --font-color: #000;
+}
+
+
+/* Reset CSS */
+
+* {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+}
+
+.clr {
+    clear: both;
+}
+
+
+/* Site Float Navigation Start */
+
+.site-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    background: #f2f3f4;
+    width: 600px;
+    height: 45px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px -5px rgb(0 0 0 / 20%);
+}
+
+.site-nav ul li {
+    display: inline-block;
+}
+
+
+/* Site Float Navigation End  */
+
+
+/* Product Card Image Slider */
+
+section#product {
+    margin-top: 73px !important;
+}
+
+.row.product-slide {
+    position: relative;
+}
+
+.row.product-slide::after {
+    position: absolute;
+    content: '';
+    top: -45px;
+    left: 0;
+    width: 100%;
+    height: 275px;
+    background: #f2f2f273;
+    z-index: -1;
+    border-radius: 30px;
+}
+
+.product-card {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.product-details {
+    padding: 15px 20px;
+}
+
+.product-image-slide {
+    overflow: hidden;
+}
+
+.product-image.slick-slide img {
+    margin: auto;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all linear .3s;
+}
+
+.product-image-slide.slick-initialized.slick-slider {
+    position: relative;
+}
+
+.product-image-slide-nxt-arrow.slick-arrow,
+.product-image-slide-prev-arrow.slick-arrow {
+    position: absolute;
+    top: 90px;
+    font-size: 26px;
+    transition: all linear .3s;
+}
+
+.product-image-slide-prev-arrow.slick-arrow {
+    left: -27px;
+    z-index: 1;
+}
+
+.product-image-slide-nxt-arrow.slick-arrow {
+    right: -27px;
+}
+
+.product-image-slide:hover>.product-image-slide-prev-arrow.slick-arrow {
+    left: 15px;
+}
+
+.product-image-slide:hover>.product-image-slide-nxt-arrow.slick-arrow {
+    right: 15px;
+}
+
+.p-usr-info ul li {
+    display: inline-block;
+}
+
+a.product-title {
+    display: block;
+    font-size: 26px;
+    color: #111;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+span.product-ratings {
+    margin-top: 10px;
+    display: block;
+}
+
+
+/* a.product-btns {
+    width: 150px;
+    height: 40px;
+    display: block;
+    background: rebeccapurple;
+    text-align: center;
+    line-height: 40px;
+    margin: auto;
+} */
+
+a.product-btns {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 !important;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+h3.product-price {
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+span.pdct-rate-number {
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: 400;
+}
+
+span.product-ratings ul li i {
+    color: #FDCC0D;
+}
+
+li.p-user a.p-user-name {
+    display: block;
+    font-family: monospace;
+    font-size: 17px;
+    font-weight: 400;
+    color: #111111;
+    margin-left: 5px;
+}
+
+.p-usr-info ul {
+    margin-bottom: 3px;
+}
+
+
+/* Marketplace Logo Section Start */
+
+a.mktp-logo {
+    display: block;
+    margin: auto;
+    width: 195px;
+}
+
+.market-place-main {
+    padding: 70px;
+}
+
+
+/* Marketplace Logo Section End */
+
+
+/* Testimonial Section Start */
+
+.testimonial-body {
+    background: url(../images/teztimonial-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+.testimonial-container {
+    background: #1D4354;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    color: #fff;
+}
+
+.tst-ft-img {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+span.testimonial-service-rating ul li {
+    display: inline-block;
+    color: #6FDA44;
+    font-size: 24px;
+}
+
+h3.testimonial-project-title {
+    font-weight: 400;
+}
+
+h2.testimonial-message {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2.testimonial-message a {
+    color: #fff;
+    font-size: 19px;
+}
+
+
+/* Testimonial Section End */
